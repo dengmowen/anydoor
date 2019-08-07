@@ -1,6 +1,7 @@
 {
     "name": "anydoorpackage",
     "version": "0.0.1",
+    "scripts": {},
     "devDependencies": {
         "eslint": "^6.1.0",
         "pre-commit": "^1.2.2"

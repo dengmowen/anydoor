@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const conf = require('./config/serverConfig');
 const path = require('path');
 const route = require('./helper/route');
+const openUrl = require('./helper/openUrl');
 // const server = http.createServer((req, res) => {
 //   res.setHeader('Access-Control-Allow-Origin','*');
 //   // 获取当前文件夹
@@ -30,6 +31,7 @@ class Server {
     server.listen(this.conf.port, this.conf.hostname, () => {
       const addr = `http://${this.conf.hostname}:${this.conf.port}`;
       console.log(`Serve is Run at ${chalk.green(addr)}`);
+      openUrl(addr);
     });
   }
 }

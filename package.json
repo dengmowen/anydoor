@@ -2,9 +2,17 @@
     "name": "anydoorpackage",
     "version": "0.0.1",
     "scripts": {},
+    "main": "src/app/js",
+    "bin": {
+        "anydoor": "bin/anydoor"
+    },
     "devDependencies": {
         "eslint": "^6.1.0",
         "pre-commit": "^1.2.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "handlebars": "^4.1.2",
+        "yargs": "^13.3.0"
+    }
 }
